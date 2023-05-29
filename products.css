@@ -1,0 +1,57 @@
+.nav_card {
+    position: absolute;
+    top: 88%;
+    width: 90%;
+    left: 5%;
+    font-size: 17px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("./images/minus.png");
+}
+
+.accordion-button.collapsed::after {
+    background-image: url("./images/eva_plus-square-outline (1).png")
+}
+
+.accordion-button:not(.collapsed) {
+    box-shadow: none;
+}
+
+.accordion-button.collapsed {
+    box-shadow: none;
+}
+
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 20px;
+    text-decoration: none;
+    border: 1px solid #4DDBDF;
+    border-radius: 10px;
+    margin-inline: 7px;
+}
+
+.pagination a.active {
+    border: 4px solid #4DDBDF;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+.footer-0-container {
+    background: url('./images/Footer.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    position: relative;
+}

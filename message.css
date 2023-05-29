@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+*
+{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+.body
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* background:linear-gradient(#0587DE 0%) */
+  /* background-color: #0587DE ; */
+}
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+.container
+{
+  position: relative;
+  width: 95%;
+  max-width: 100%;
+  /* height: 740px; */
+  /* background: #EDF1F4; */
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.06),0 2px 5px 0 rgba(0,0,0,0.06);
+  display: flex;
+}
+.container .leftside
+{
+  position: relative;
+  flex: 40%;
+  background: #F6F8F9;
+}
+.container .rightside
+{
+  position:relative;
+  flex: 70%;
+  /* background: #DFE0E1; */
+}
+
+.icon3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+/* .container .thirdside
+{
+    position:relative;
+    flex: 40%;
+    background: #F2F6F8;
+    border-right: 1px solid #000;
+} */
+.header
+{
+    position: relative;
+    width: 100%;
+    height:90px;
+    background: #F1F1F1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+.userimg
+{
+    position: relative;
+    width:50px ;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.cover
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.search_chat div ion-icon
+{
+    position: absolute;
+    top: 40%;
+    left: 87%;
+    font-size: 1.2em;
+    
+}
+.chatlist
+{
+ position: relative;
+ height: calc(100% - 80px);
+ overflow-y: auto;
+}
+.chatlist .block
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+.chatlist .block .imgbx
+{
+    position: relative;
+    min-width: 55px;
+    height: 55px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.chatlist .block .details
+{
+    position: relative;
+    width: 100%;
+}
+.chatlist .block .details .listHead
+{
+    display: flex;
+    justify-content: space-between;
+    /* margin-bottom: 2px; */
+}
+.chatlist .block .details .listHead h4
+{
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #123581;
+    margin-top: 9px;
+}
+.chatlist .block .details .listHead .time
+{
+  font-size: 0.75em;
+  color: #0B3F88;
+}
+.message_p
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.message_p p
+{
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    font-size: 0.9em;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.message_p b
+{
+    background: #4EBEFA;
+    color: #F6F8F9;
+    min-width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.75em;
+}
+.imgText
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgText p
+{
+    font-weight:400;
+    line-height: 1.2em;
+    margin-left: 15px;
+}
+.imgText p span
+{
+    font-size: 0.8em;
+    color: #414243;
+}
+.cover22
+{
+    position: relative;
+    width:40px ;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-top: 25px;
+    margin-left: 5px;
+}
+/* chat box css */
+.chatbox
+{
+    position: relative;
+    width: 100%;
+    height : calc(100% - 115px);
+    padding: 50px;
+    overflow-y: auto;
+}
+.message
+{
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin: 5px 0;
+}
+.message p
+{
+ position: relative;
+ right: 0;
+ text-align: right;
+ max-width: 65%;
+ padding: 12px;
+ background: #667BF5;
+ border-radius: 10px;
+ font-size: 0.9em;
+}
+/* .message p::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -12px;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(135deg,#667BF5 0%,#667BF5 50%,transparent 50%,transparent)
+} */
+.message p span
+{
+    display: block;
+    margin-top: 5px;
+    font-size: 0.85em;
+    opacity: 0.5;
+}
+.my_message
+{
+    justify-content: flex-end;
+}
+.my_message p{
+    background: #6AF5BB;
+}
+.frnd_message
+{
+    justify-content: flex-start;
+}
+.frnd_message p
+{
+    background: #F4F4F4;
+    text-align: left;
+}
+/* .message.frnd_message p::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -12px;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(225deg,#fff 0%, #fff 50%,transparent 50%,transparent)
+} */
+.chatbox_input
+{
+    position: absolute;
+    top: 90%;
+    width: 100%;
+    height: 8%;
+    background: #F4F4F4;;
+    /* padding: 15px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.chatbox_input ion-icon
+{
+    cursor: pointer;
+    font-size: 1.8em;
+    color: #8188CA;
+}
+.chatbox_input ion-icone:nth-child(1)
+{
+    margin-right: 15px;
+}
+.chatbox_input input
+{
+    position: relative;
+    width: 90%;
+    margin: 0 20px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 1em;
+}
+.cover23
+{
+    position: relative;
+    width: 150px;
+    height: 141px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-top: 25px;
+    margin-left: 113px;
+}
+.third_image h3
+{
+    text-align: center;
+    margin-top: 8px;
+}
+.third_image h5
+{
+    text-align: center;
+    margin-top: 8px;
+    color: #4F5152;
+}
+/* .chatimage
+{
+    width: 101px;
+    height: 69px;
+    margin-top: 20px;
+    margin-left: 53px;
+} */
+.icon22
+{
+    margin-top: 25px;
+    margin-left: 15px;
+}
+.icon22 ion-icon
+{
+    font-size: 25px;
+    padding: 10px;
+}
+.icon22 h5
+{
+    position: absolute;
+    margin-left: 45px;
+    margin-top: -42px;
+    color: #4F5152;
+}
+.attachment
+{
+    margin-left: 16px;
+    margin-top: 6px;
+    color: #4F5152;
+}
+.pdf
+{
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 5px;
+}
+.pdf img
+{
+    width: 51px;
+    height: 66px;
+    margin-left: 26px;
+    margin-top: -13px;
+}
+.button
+{
+    text-align: center;
+    margin-top: 119px;
+    margin-left: 5px;
+}
+
+.footer-0-container {
+    background: url('./images/Footer.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    position: relative;
+}

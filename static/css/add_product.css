@@ -1,0 +1,188 @@
+.icon3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.uploadimg {
+    background: #FFFFFF;
+    border: 1px dashed #9B9B9B;
+    border-radius: 14px;
+}
+.button{
+    width: 137px;
+height: 43px;
+left: 1026px;
+top: 1021px;
+}
+.addproduct{
+    background: url('/image/young-man-packing-books-cardboard-boxes-he-moving-house_249974-6086 1.svg');
+    background-color: #4EBEFA;
+}
+.addproduct h1{
+    font-size: 44px;
+    font-weight: bold;
+}
+.addproduct p{
+    font-size: 14px;
+}
+.footer-0-container {
+    position: relative;
+    background: url('/image/Footer.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+.button1
+{
+    width: 218px;
+    height: 48px;
+    left: 688px;
+    background: #01304A;
+    color: #FFFFFF;  
+    border-radius: 19px;
+}
+
+/* *******************************************************footer***************************************************************************** */
+.img-footer-bottom1 {
+    width: 100%;
+    position: absolute;
+    z-index: -2;
+    height: 100%;
+}
+
+.img-footer-bottom2 {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    top: 2%;
+}
+@media screen and (max-width: 575px) {
+    .img-footer-bottom1 {
+       display: none;
+    }
+    
+    .img-footer-bottom2 {
+       display: none;
+    }
+    .cstm_insrt_footer{
+        background-color: #01304a;
+    }
+}
+
+
+.Icons--Container--Footer p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 49px;
+    width: 48px;
+    border-radius: 50%;
+    font-size: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
+    margin: 0px;
+}
+
+.Icons--Container--Footer {
+    column-gap: 10px;
+    flex-wrap: wrap;
+}
+
+.Icons--Container--Footer .fa-brands {
+    color: #6AF5BB;
+}
+
+.footer-section-second {}
+
+.footer-section-first {
+    margin-top: 160px !important;
+    padding: 0px 80px 28px 80px;
+}
+
+.text-1 {
+    font-size: 14px;
+}
+
+.text-2 {
+    font-size: 15px;
+}
+
+.first-container {
+    row-gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-section-col-2 img {
+    margin-right: 8px;
+}
+
+.footer-container-tophead::after {
+    content: '';
+    width: 32px;
+    height: 2px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    display: block;
+    background: linear-gradient(270deg, #4EBEFA 0%, #6AF5BB 100%);
+}
+
+.context-footer img {
+    Width: 178px;
+}
+
+@media screen and (max-width: 420px) {
+    .context-footer img {
+        Width: 138px;
+    }
+}
+
+.footer-section-second {
+    padding: 0px 100px 0px 100px;
+}
+
+.footer-section-second>div {
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.footer-section-second>div p:nth-child(1) {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    font-family: 'Inter', sans-serif;
+}
+
+.footer-section-second>div p:nth-child(2) {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    font-family: 'Inter', sans-serif;
+}
+
+/* .span-1--footer::after {
+    content: '.';
+    width: 3px;
+    height: 3px;
+    margin-top: 10px;
+    color: #4EBEFA;
+} */
+
+.Footer-main--row {
+    row-gap: 20px;
+}
+
+@media only screen and (max-width: 992px) {
+    .footer-section-second {
+        padding: 0px 40px 0px 40px;
+    }
+
+    .footer-section-first {
+        margin-top: 180px;
+        padding: 0px 40px 28px 40px;
+    }
+}
